@@ -1,1 +1,1 @@
-SELECT T1.Id FROM Weather T1 JOIN Weather T2 ON T1.Id=(T2.Id+1) WHERE T1.Temperature > T2.Temperature
+select W2.Id from Weather as W1, Weather as W2 where DATEDIFF(W2.RecordDate, W1.RecordDate) = 1 and W1.Temperature < W2.Temperature;
