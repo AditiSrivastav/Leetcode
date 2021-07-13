@@ -1,0 +1,1 @@
+SELECT T1.Id FROM Weather T1 JOIN Weather T2 ON T1.Id=(T2.Id+1) WHERE T1.Temperature > T2.Temperature
