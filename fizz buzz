@@ -1,0 +1,13 @@
+class Solution {
+public:
+    vector<string> fizzBuzz(int n) {
+         vector<string> ans(n);
+        for (int i = 0, j = 2, k = 4; i < n; i++, j += 3, k += 5) {
+            if (ans[i].empty()) ans[i] = to_string(i+1);
+            if (j < n) ans[j] = "Fizz" + ans[j];
+            if (k < n) ans[k] = "Buzz";
+        }
+        return ans;
+    }
+    
+};
